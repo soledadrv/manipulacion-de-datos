@@ -19,31 +19,31 @@
         <form action="/movies/update/<%= Movie.id %>?_method=PUT" method="POST">
 
             <label for="title">Title </label>
-            <p><input type="text" name="title" id="title" value="<%= locals.old && old.title ? old.title : Movie.title%>" required></p>
+            <p><input type="text" name="title" id="title" value="<%= locals.old && old.title ? old.title : Movie.title%>"></p>
             <% if (locals.errors && errors.title) { %> 
                 <small> <%= errors.title.msg %>  </small>
             <% } %>
 
             <label for="rating">Rating </label>
-            <p><input type="number" name="rating" id="rating" value="<%= locals.old && old.rating ? old.rating : Movie.rating %>" required></p>
+            <p><input type="number" name="rating" id="rating" value="<%= locals.old && old.rating ? old.rating : Movie.rating %>"></p>
             <% if (locals.errors && errors.rating) { %> 
                 <small> <%= errors.rating.msg %>  </small>
             <% } %>
 
             <label for="awards">Awards </label>
-            <p><input type="number" name="awards" id="awards" value="<%= locals.old && old.awards ? old.awards : Movie.awards %>" required></p>
+            <p><input type="number" name="awards" id="awards" value="<%= locals.old && old.awards ? old.awards : Movie.awards %>"></p>
             <% if (locals.errors && errors.awards) { %> 
                 <small> <%= errors.awards.msg %>  </small>
             <% } %>
 
             <label for="release_date">Release date </label>
-            <p><input type="date" name="release_date" id="release_date" value="<%= locals.old && old.release_date ? old.release_date : Movie.release_date %>" required></p>
+            <p><input type="date" name="release_date" id="release_date" value="<%= locals.old && old.release_date ? old.release_date : Movie.release_date %>"></p>
             <% if (locals.errors && errors.release_date) { %> 
                 <small> <%= errors.release_date.msg %>  </small>
             <% } %>
 
             <label for="length">Length </label>
-            <p><input type="number" name="length" id="" value="<%= locals.old && old.length ? old.length : Movie.length %>" required></p>
+            <p><input type="number" name="length" id="" value="<%= locals.old && old.length ? old.length : Movie.length %>"></p>
             <% if (locals.errors && errors.length) { %> 
                 <small> <%= errors.length.msg %>  </small>
             <% } %>

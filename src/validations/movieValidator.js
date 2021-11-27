@@ -6,7 +6,7 @@ module.exports = [
         .isLength({min: 2}).withMessage('El nombre de la película debe tener al menos 2 caracteres.'),
     check('rating')
         .notEmpty().withMessage('El rating de la película es obligatorio.').bail()
-        .isInt().withMessage('El rating de la película debe ser un número.'),
+        .isDecimal().withMessage('El rating de la película debe ser un número.'),
     check('length')
         .notEmpty().withMessage('La duración de la película es obligatoria.').bail()
         .isInt().withMessage('La duración de la película debe ser un número.'),
